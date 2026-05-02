@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harits Nakhlah Putra | Interactive OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <p id="loader-text">INITIALIZING SYSTEM...</p>
+        </div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <header class="navbar">
+        <div class="logo magnetic" data-strength="20">HNP_OS<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#about" class="magnetic" data-strength="15">SYS.ABOUT</a>
+            <a href="#projects" class="magnetic" data-strength="15">SYS.PROJECTS</a>
+            <a href="#contact" class="magnetic" data-strength="15">SYS.CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="reveal-text">HARITS<br><span class="outline-text">NAKHLAH</span><br>PUTRA</h1>
+                    <p class="subtitle fade-up">Informatics Engineering Student @ ITPLN • Software Developer • AI Explorer</p>
+                    
+                    <div class="terminal-window fade-up" id="terminal">
+                        <div class="terminal-header">
+                            <span class="btn-close"></span>
+                            <span class="btn-min"></span>
+                            <span class="btn-max"></span>
+                            <span class="terminal-title">guest@harits-os: ~</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-output">
+                            <p class="sys-msg">Welcome to HNP_OS v2.0.26.</p>
+                            <p class="sys-msg">Type <span class="highlight">'help'</span> to see available commands.</p>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="prompt">guest@harits-os:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" autofocus>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-up">
+                    <div class="image-glitch-container magnetic" data-strength="30">
+                        <img src="foto.jpeg" alt="Harits Nakhlah Putra" class="profile-image">
+                        <div class="scanline"></div>
+                    </div>
+                    <div class="status-badge">
+                        <span class="dot-pulse"></span> SYSTEM: ONLINE
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>C++ PROGRAMMING</span> ✦ <span>ARTIFICIAL INTELLIGENCE</span> ✦ <span>ALGORITHM VISUALIZATION</span> ✦ <span>SOFTWARE ARCHITECTURE</span> ✦ <span>PROMPT ENGINEERING</span> ✦ <span>DATA STRUCTURES</span> ✦ 
+                <span>C++ PROGRAMMING</span> ✦ <span>ARTIFICIAL INTELLIGENCE</span> ✦ <span>ALGORITHM VISUALIZATION</span> ✦ <span>SOFTWARE ARCHITECTURE</span> ✦ <span>PROMPT ENGINEERING</span> ✦ <span>DATA STRUCTURES</span> ✦
+            </div>
+        </div>
+
+        <section id="about" class="about-section">
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <h2 class="section-title">LOGICAL<br>THINKER.</h2>
+                    <p>
+                        Berusia 24 tahun dan sedang menempuh pendidikan Teknik Informatika. Fokus saya adalah merancang sistem yang efisien dan memecahkan masalah kompleks melalui kode.
+                    </p>
+                    <p>
+                        Saya memiliki minat besar pada analisis algoritma (terutama <i>Sorting Arrays</i> menggunakan C++), serta meneliti kapabilitas AI generatif, termasuk pemahaman seputar <i>AI bias</i> dan manipulasi parameter visual untuk hasil yang fotorealistis.
+                    </p>
+                </div>
+                <div class="stats-container fade-up">
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="3.89">0.00</h3>
+                        <p>Semester 1 GPA</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="24">0</h3>
+                        <p>Years of Existence</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 class="counter" data-target="100">0</h3>
+                        <p>% Caffeine Powered</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title fade-up">SYSTEM<br>MODULES.</h2>
+            
+            <div class="project-grid">
+                <div class="card-3d fade-up">
+                    <div class="card-content">
+                        <div class="card-year">2026 // APP DEV</div>
+                        <h3>VoiceCatat</h3>
+                        <p>Sistem pencatatan penjualan dan stok barang berbasis input suara (Voice-to-Database), dirancang khusus untuk mempermudah operasional lansia pemilik UMKM.</p>
+                        <div class="card-tags">
+                            <span>Voice Recognition</span>
+                            <span>UX Design</span>
+                        </div>
+                    </div>
+                    <div class="glare"></div>
+                </div>
+
+                <div class="card-3d fade-up">
+                    <div class="card-content">
+                        <div class="card-year">2025 // DESKTOP DEV</div>
+                        <h3>Sort Visualizer</h3>
+                        <p>Aplikasi C++ menggunakan SFML yang memvisualisasikan bagaimana memori dipindahkan saat algoritma pengurutan (seperti <i>Bubble Sort</i>) dieksekusi secara real-time.</p>
+                        <div class="card-tags">
+                            <span>C++</span>
+                            <span>SFML</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="glare"></div>
+                </div>
+
+                <div class="card-3d fade-up">
+                    <div class="card-content">
+                        <div class="card-year">2026 // WEB CONCEPT</div>
+                        <h3>Smart Digital Solution</h3>
+                        <p>Proyek prototipe inovasi web yang dibangun untuk menyelesaikan permasalahan dunia nyata dengan pendekatan efisiensi logika dan desain sentris.</p>
+                        <div class="card-tags">
+                            <span>Web Design</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="glare"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section fade-up">
+            <div class="contact-wrapper">
+                <h2>INITIATE<br>CONNECTION.</h2>
+                <div class="contact-buttons">
+                    <a href="mailto:emailanda@gmail.com" class="btn-magnetic " data-strength="50">
+                        <span class="btn-text">SEND_EMAIL()</span>
+                    </a>
+                    <a href="#" class="btn-magnetic " data-strength="50" style="background: transparent; color: var(--accent); border: 1px solid var(--accent);">
+                        <span class="btn-text">GITHUB_REPO()</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>COMPILED IN JAKARTA BARAT &copy; 2026 HARITS NAKHLAH PUTRA.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
